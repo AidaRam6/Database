@@ -1,5 +1,5 @@
 CREATE DATABASE lab1;
-\c  lab1
+
 CREATE table users(
     id SERIAL PRIMARY KEY,
     firstname VARCHAR(50),
@@ -23,6 +23,5 @@ CREATE TABLE tasks (
 
 DROP TABLE tasks;
 
-\c postgres
 DROP DATABASE lab1;
 
