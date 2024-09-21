@@ -51,7 +51,7 @@ SELECT country_name,population * 1.1 AS "New Populatoin" FROM countries;
 DELETE FROM countries WHERE population < 10000000;
 
 --15
-SELECT * FROM countries_new WHERE country_id IN (SELECT country_id FROM countries) ;
+DELETE FROM countries_new WHERE country_id IN (SELECT country_id FROM countries)  RETURNING * ;
 
 --16
 DELETE FROM countries returning *;
